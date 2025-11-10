@@ -1,0 +1,7 @@
+{
+    "QueueName":  "payments-failed",
+    "Attributes":  {
+                       "VisibilityTimeout":  "60",
+                       "RedrivePolicy":  "{\"deadLetterTargetArn\":\"arn:aws:sqs:us-east-1:567369746673:payments-failed-dlq\",\"maxReceiveCount\":\"5\"}"
+                   }
+}
